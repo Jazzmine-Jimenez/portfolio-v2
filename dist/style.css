@@ -1,0 +1,12 @@
+.colored-line {
+  width: 3rem;
+  color: rgba(42, 55, 187, 1);
+  background-color: rgba(42, 55, 187, 1);
+  size: 20rem;
+  opacity: 1;
+  margin: auto;
+}
+
+.card-background{
+  background-color: rgb(236, 225, 208);
+}
