@@ -6,10 +6,10 @@ export default function Home () {
     <div>
       {header()}
     </div>
-    <div className="container">
+      <div className="container main-container">
       <div className="row">
         <div className="col-5">
-          <div className="shadow">
+          <div className="shadow card-container">
             <div className="card-background">
               <div className="row">
                 <img
@@ -18,21 +18,24 @@ export default function Home () {
                   alt="image of me, Jazzmine." />
               </div>
               <div className="row text-center">
-                <div className="col-12">
-                  <h6>Jazzmine</h6>
-                  <h6>Jimenez</h6>
+                <div className="col-12 fw-bolder name-text">
+                  <h4>Jazzmine</h4>
+                  <h4>Jimenez</h4>
                 </div>
               </div>
               <hr className="colored-line my-4" />
               <div className="row text-center">
-                <div className="col-12">
+                  <div className="col-12 font-monospace">
                   <p>Software Developer</p>
                 </div>
               </div>
             </div>
             <div className="row text-center">
-              <div className="col-12">
-                <p>icons</p>
+              <div className="col-12 ">
+                <a className="btn fs-3" href="#" role="button"><i class="fas fa-envelope"></i></a>
+                <a className="btn fs-3" href="#" role="button"><i class="fab fa-linkedin"></i></a>
+                <a className="btn fs-3" href="#" role="button"><i class="fab fa-github"></i></a>
+                <a className="btn fs-3" href="#" role="button"><i class="fas fa-file-download"></i></a>
               </div>
             </div>
           </div>
