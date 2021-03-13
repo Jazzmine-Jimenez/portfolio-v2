@@ -49,7 +49,19 @@ export default function Home () {
           </div>
         </div>
         <div className="col-7">
-          <p>about me</p>
+          <h3>Hello</h3>
+          <h4>heres a little bit about me...</h4>
+          <p>I was introduced to coding about 8 years ago and immediately fell in love.</p>
+          <p> I have a B.S. in mathematics because I love how difficult math is, the problem solving,
+            the logic and how accomplished I feel when I complete a problem.
+            I was able to find everything I love about math in coding,
+            but the big difference you are able to create something that others can use.
+            After taking that C++ course I considered switching majors but being a first generation
+            college student decided it was more important for me to complete my degree in 4 years.
+            Looking back now I wish I would have taken the extra time, but here I am in the middle
+            of a career change as recent coding bootcamp grad making my
+            dream of coding for a living a reality.
+          </p>
         </div>
       </div>
     </div>
