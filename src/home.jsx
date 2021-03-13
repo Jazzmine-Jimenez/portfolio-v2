@@ -49,8 +49,9 @@ export default function Home () {
           </div>
         </div>
         <div className="col-7">
-          <p>about me</p>
-          <h5>I was introduced to coding about 8 years ago and immediately fell in love.</h5>
+          <h3>Hello</h3>
+          <h4>heres a little bit about me...</h4>
+          <p>I was introduced to coding about 8 years ago and immediately fell in love.</p>
           <p> I have a B.S. in mathematics because I love how difficult math is, the problem solving,
             the logic and how accomplished I feel when I complete a problem.
             I was able to find everything I love about math in coding,
