@@ -9,7 +9,7 @@ export default function Home () {
       <div className="container main-container">
       <div className="row">
         <div className="col-5">
-          <div className="shadow card-container">
+          <div className="shadow card-container my-4">
             <div className="card-background">
               <div className="row">
                 <img
@@ -49,8 +49,8 @@ export default function Home () {
           </div>
         </div>
         <div className="col-7">
-          <h3>Hello</h3>
-          <h4>heres a little bit about me...</h4>
+            <h3 className="fs-1 fw-bold py-3">Hello</h3>
+          <h4 className="pb-3">heres a little bit about me.</h4>
           <p>I was introduced to coding about 8 years ago and immediately fell in love.</p>
           <p> I have a B.S. in mathematics because I love how difficult math is, the problem solving,
             the logic and how accomplished I feel when I complete a problem.
