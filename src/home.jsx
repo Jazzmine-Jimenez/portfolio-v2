@@ -85,7 +85,7 @@ export default function Home () {
 
 const header = () => {
   return (
-    <div className="container-fluid py-5">
+    <div className="container-fluid py-5 shadow-sm mb-5">
       <div className="row align-items-center">
         <div className="col-9">
           <p><i className="fas fa-laptop-code"> Jazzmine Jimenez </i> / Software Developer</p>
