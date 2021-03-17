@@ -49,9 +49,15 @@ export default function Home () {
           </div>
         </div>
         <div className="col-7">
-          <h3 className="fs-1 fw-bold py-3">Hello</h3>
-          <h4 className="pb-3">heres a little bit about me.</h4>
-          <p>I was introduced to coding about 8 years ago and immediately fell in love.</p>
+          <h3 className="fs-1 fw-bold py-3">Hello, </h3>
+          <h4 className="pb-3">I am a software developer with experience with &nbsp;
+            <i class="fab fa-html5"></i> &nbsp;
+            <i class="fab fa-css3-alt"></i> &nbsp;
+            <i class="fab fa-js-square"></i> &nbsp;
+            <i class="fab fa-react"></i> &nbsp;
+            <i class="fab fa-node"></i> &nbsp;
+          </h4>
+          <p className="fst-italic">I was introduced to coding about 8 years ago and immediately fell in love.</p>
           <p> I have a B.S. in mathematics because I love how difficult math is, the problem solving,
             the logic and how accomplished I feel when I complete a problem.
             I was able to find everything I love about math in coding,
@@ -77,9 +83,9 @@ const header = () => {
           <p><i className="fas fa-laptop-code"> Jazzmine Jimenez </i> / Software Developer</p>
         </div>
         <div className="col-3 d-flex justify-content-evenly">
-          <a className="pe-3" href="#">Home</a>
-          <a className="pe-3" href="#">Experience</a>
-          <a className="pe-3" href="#">Projects</a>
+          <a className="pe-3 text-decoration-none" href="#">Home</a>
+          <a className="pe-3 text-decoration-none" href="#">Experience</a>
+          <a className="pe-3 text-decoration-none" href="#">Projects</a>
         </div>
       </div>
 

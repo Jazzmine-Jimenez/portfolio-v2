@@ -8056,9 +8056,21 @@ function Home() {
     className: "col-7"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
     className: "fs-1 fw-bold py-3"
-  }, "Hello"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
+  }, "Hello, "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
     className: "pb-3"
-  }, "heres a little bit about me."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "I was introduced to coding about 8 years ago and immediately fell in love."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " I have a B.S. in mathematics because I love how difficult math is, the problem solving, the logic and how accomplished I feel when I complete a problem. I was able to find everything I love about math in coding, but the big difference you are able to create something that others can use. After taking that C++ course I considered switching majors but being a first generation college student decided it was more important for me to complete my degree in 4 years. Looking back now I wish I would have taken the extra time, but here I am in the middle of a career change as recent coding bootcamp grad making my dream of coding for a living a reality.")))));
+  }, "I am a software developer with experience with \xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+    class: "fab fa-html5"
+  }), " \xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+    class: "fab fa-css3-alt"
+  }), " \xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+    class: "fab fa-js-square"
+  }), " \xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+    class: "fab fa-react"
+  }), " \xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+    class: "fab fa-node"
+  }), " \xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "fst-italic"
+  }, "I was introduced to coding about 8 years ago and immediately fell in love."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " I have a B.S. in mathematics because I love how difficult math is, the problem solving, the logic and how accomplished I feel when I complete a problem. I was able to find everything I love about math in coding, but the big difference you are able to create something that others can use. After taking that C++ course I considered switching majors but being a first generation college student decided it was more important for me to complete my degree in 4 years. Looking back now I wish I would have taken the extra time, but here I am in the middle of a career change as recent coding bootcamp grad making my dream of coding for a living a reality.")))));
 }
 
 const header = () => {
@@ -8073,13 +8085,13 @@ const header = () => {
   }, " Jazzmine Jimenez "), " / Software Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "col-3 d-flex justify-content-evenly"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    className: "pe-3",
+    className: "pe-3 text-decoration-none",
     href: "#"
   }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    className: "pe-3",
+    className: "pe-3 text-decoration-none",
     href: "#"
   }, "Experience"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    className: "pe-3",
+    className: "pe-3 text-decoration-none",
     href: "#"
   }, "Projects"))));
 };
