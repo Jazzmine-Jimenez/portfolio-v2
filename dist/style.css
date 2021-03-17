@@ -1,5 +1,5 @@
 .main-container{
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .colored-line {
@@ -12,12 +12,11 @@
 }
 
 .card-background{
-  background-color: rgb(247, 239, 221);
+  background-color: rgb(230, 226, 231);
 }
 
 .card-container{
-  max-width: 700px;
-  min-width: 300px;
+  width: 370px;
 }
 
 .name-text{
