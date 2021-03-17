@@ -31,17 +31,17 @@ export default function Home () {
               </div>
             </div>
             <div className="row text-center">
-              <div className="col-12 ">
-                  <a className="btn fs-3" href="mailto:jazzmine.m25@gmail.com" role="button">
+                <div className="col-12">
+                  <a className="btn fs-4" href="mailto:jazzmine.m25@gmail.com" role="button">
                   <i className="fas fa-envelope"></i>
                 </a>
-                  <a className="btn fs-3" href="https://www.linkedin.com/in/jazzmine-jimenez/" target="_blank" role="button">
+                  <a className="btn fs-4" href="https://www.linkedin.com/in/jazzmine-jimenez/" target="_blank" role="button">
                   <i className="fab fa-linkedin"></i>
                 </a>
-                  <a className="btn fs-3" href="https://github.com/Jazzmine-Jimenez" target="_blank" role="button">
+                  <a className="btn fs-4" href="https://github.com/Jazzmine-Jimenez" target="_blank" role="button">
                   <i className="fab fa-github"></i>
                 </a>
-                  <a className="btn fs-3" href="https://drive.google.com/file/d/1xTbeHmWCy8U8smHypAzyIn391CqoDIFZ/view" target="_blank" role="button">
+                  <a className="btn fs-4" href="https://drive.google.com/file/d/1xTbeHmWCy8U8smHypAzyIn391CqoDIFZ/view" target="_blank" role="button">
                   <i className="fas fa-file-download"></i>
                 </a>
               </div>
