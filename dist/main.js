@@ -8047,7 +8047,7 @@ function Home() {
     className: "fab fa-github"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     className: "btn fs-4",
-    href: "https://drive.google.com/file/d/1xTbeHmWCy8U8smHypAzyIn391CqoDIFZ/view",
+    href: "https://drive.google.com/file/d/1m7KQcjew_TO1aL0IQUB8_ImKce5Z53As/view?usp=sharing",
     target: "_blank",
     role: "button"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
@@ -8070,8 +8070,9 @@ function Home() {
     className: "fab fa-node"
   }), " \xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     className: "btn btn-outline-dark me-3 mb-3 px-4",
-    href: "#",
-    role: "button"
+    href: "https://drive.google.com/file/d/1m7KQcjew_TO1aL0IQUB8_ImKce5Z53As/view?usp=sharing",
+    role: "button",
+    target: "_blank"
   }, "Resume"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     className: "btn btn-outline-dark mb-3 px-4",
     href: "#",
@@ -8101,7 +8102,12 @@ const header = () => {
   }, "Experience"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     className: "pe-3 text-decoration-none",
     href: "#"
-  }, "Projects"))));
+  }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    className: "btn btn-outline-dark me-3 mb-3 px-4",
+    href: "https://drive.google.com/file/d/1m7KQcjew_TO1aL0IQUB8_ImKce5Z53As/view?usp=sharing",
+    role: "button",
+    target: "_blank"
+  }, "Resume"))));
 };
 
 /***/ })

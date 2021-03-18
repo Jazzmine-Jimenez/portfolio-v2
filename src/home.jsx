@@ -41,7 +41,7 @@ export default function Home () {
                   <a className="btn fs-4" href="https://github.com/Jazzmine-Jimenez" target="_blank" role="button">
                   <i className="fab fa-github"></i>
                 </a>
-                  <a className="btn fs-4" href="https://drive.google.com/file/d/1xTbeHmWCy8U8smHypAzyIn391CqoDIFZ/view" target="_blank" role="button">
+                  <a className="btn fs-4" href="https://drive.google.com/file/d/1m7KQcjew_TO1aL0IQUB8_ImKce5Z53As/view?usp=sharing" target="_blank" role="button">
                   <i className="fas fa-file-download"></i>
                 </a>
               </div>
@@ -58,7 +58,11 @@ export default function Home () {
             <i className="fab fa-node"></i> &nbsp;
           </h4>
 
-          <a className="btn btn-outline-dark me-3 mb-3 px-4" href="#" role="button">Resume</a>
+          <a className="btn btn-outline-dark me-3 mb-3 px-4"
+              href="https://drive.google.com/file/d/1m7KQcjew_TO1aL0IQUB8_ImKce5Z53As/view?usp=sharing"
+              role="button" target="_blank" >
+            Resume
+          </a>
           <a className="btn btn-outline-dark mb-3 px-4" href="#" role="button">Projects</a>
 
           <p className="fst-italic">I was introduced to coding about 8 years ago and immediately fell in love.</p>
@@ -94,6 +98,11 @@ const header = () => {
           <a className="pe-3 text-decoration-none" href="#">Home</a>
           <a className="pe-3 text-decoration-none" href="#">Experience</a>
           <a className="pe-3 text-decoration-none" href="#">Projects</a>
+          <a className="btn btn-outline-dark me-3 mb-3 px-4"
+            href="https://drive.google.com/file/d/1m7KQcjew_TO1aL0IQUB8_ImKce5Z53As/view?usp=sharing"
+            role="button" target="_blank" >
+            Resume
+          </a>
         </div>
       </div>
 
