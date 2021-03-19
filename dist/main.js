@@ -7982,10 +7982,63 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./src/home.jsx":
-/*!**********************!*\
-  !*** ./src/home.jsx ***!
-  \**********************/
+/***/ "./src/app.jsx":
+/*!*********************!*\
+  !*** ./src/app.jsx ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ App)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _lib_parse_route__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/parse-route */ "./src/lib/parse-route.js");
+/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/home */ "./src/pages/home.jsx");
+
+
+ // import NotFound from './pages/not-found';
+
+function App() {
+  const [route, setRoute] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)((0,_lib_parse_route__WEBPACK_IMPORTED_MODULE_1__.default)(window.location.hash));
+  console.log(route); // renderPage(){
+  //   if (route )
+  // }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "hi");
+}
+
+/***/ }),
+
+/***/ "./src/lib/parse-route.js":
+/*!********************************!*\
+  !*** ./src/lib/parse-route.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ parseRoute)
+/* harmony export */ });
+function parseRoute(hashRoute) {
+  if (hashRoute.startsWith('#')) {
+    hashRoute = hashRoute.replace('#', '');
+  }
+
+  const [path, queryString] = hashRoute.split('?');
+  const params = new URLSearchParams(queryString);
+  return {
+    path,
+    params
+  };
+}
+
+/***/ }),
+
+/***/ "./src/pages/home.jsx":
+/*!****************************!*\
+  !*** ./src/pages/home.jsx ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -8176,11 +8229,11 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ "./src/home.jsx");
+/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app */ "./src/app.jsx");
 
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_home__WEBPACK_IMPORTED_MODULE_2__.default, null), document.querySelector('#root'));
+react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_app__WEBPACK_IMPORTED_MODULE_2__.default, null), document.querySelector('#root'));
 })();
 
 /******/ })()
