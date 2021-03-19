@@ -25,7 +25,7 @@ export default function Home () {
               </div>
               <hr className="colored-line my-4" />
               <div className="row text-center">
-                  <div className="col-12 font-monospace">
+                  <div className="col-12 font-monospace title-spacing">
                   <p>Software Developer</p>
                 </div>
               </div>
