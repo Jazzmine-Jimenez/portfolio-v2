@@ -20,5 +20,9 @@
 }
 
 .name-text{
-  font-weight: 800;
+  font-weight: 1000;
+}
+
+.title-spacing{
+  letter-spacing: 2px;
 }
