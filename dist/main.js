@@ -7994,18 +7994,76 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _lib_parse_route__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/parse-route */ "./src/lib/parse-route.js");
-/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/home */ "./src/pages/home.jsx");
+/* harmony import */ var _src_components_navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/components/navbar */ "./src/components/navbar.jsx");
+/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/home */ "./src/pages/home.jsx");
+/* harmony import */ var _pages_projects__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/projects */ "./src/pages/projects.jsx");
+
+
 
 
  // import NotFound from './pages/not-found';
 
 function App() {
   const [route, setRoute] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)((0,_lib_parse_route__WEBPACK_IMPORTED_MODULE_1__.default)(window.location.hash));
-  console.log(route); // renderPage(){
-  //   if (route )
-  // }
+  console.log(route);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    window.addEventListener('hashchange', () => {
+      const change = (0,_lib_parse_route__WEBPACK_IMPORTED_MODULE_1__.default)(window.location.hash);
+      setRoute(change);
+    });
+  }, []);
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "hi");
+  const renderPage = () => {
+    if (route.path === 'projects') {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_projects__WEBPACK_IMPORTED_MODULE_4__.default, null);
+    } else {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Hello, inside renderPage");
+    }
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_src_components_navbar__WEBPACK_IMPORTED_MODULE_2__.default, null), renderPage());
+}
+
+/***/ }),
+
+/***/ "./src/components/navbar.jsx":
+/*!***********************************!*\
+  !*** ./src/components/navbar.jsx ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Navbar)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+function Navbar() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "container-fluid py-5 shadow-sm mb-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "row align-items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "col-sm-9"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+    className: "fas fa-laptop-code"
+  }, " Jazzmine Jimenez "), " / Software Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "col-sm-3 d-flex justify-content-evenly"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    className: "pe-3 text-decoration-none",
+    href: "#"
+  }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    className: "pe-3 text-decoration-none",
+    href: "#"
+  }, "Experience"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    className: "pe-3 text-decoration-none",
+    href: "#"
+  }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    className: "btn btn-outline-dark me-3 mb-3 px-4",
+    href: "https://drive.google.com/file/d/1m7KQcjew_TO1aL0IQUB8_ImKce5Z53As/view?usp=sharing",
+    role: "button",
+    target: "_blank"
+  }, "Resume"))));
 }
 
 /***/ }),
@@ -8048,7 +8106,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 function Home() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, header()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "container main-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "row align-middle gx-5"
@@ -8133,35 +8191,45 @@ function Home() {
   }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "fst-italic"
   }, "I was introduced to coding about 8 years ago and immediately fell in love."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " I have a B.S. in mathematics because I love how difficult math is, the problem solving, the logic and how accomplished I feel when I complete a problem. I was able to find everything I love about math in coding, but the big difference you are able to create something that others can use."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " After taking that C++ course I considered switching majors but being a first generation college student decided it was more important for me to complete my degree in 4 years. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Looking back now I wish I would have taken the extra time, but here I am in the middle of a career change as recent coding bootcamp grad making my dream of coding for a living a reality. ")))));
-}
+} // const header = () => {
+//   return (
+//     <div className="container-fluid py-5 shadow-sm mb-5">
+//       <div className="row align-items-center">
+//         <div className="col-9">
+//           <p><i className="fas fa-laptop-code"> Jazzmine Jimenez </i> / Software Developer</p>
+//         </div>
+//         <div className="col-3 d-flex justify-content-evenly">
+//           <a className="pe-3 text-decoration-none" href="#">Home</a>
+//           <a className="pe-3 text-decoration-none" href="#">Experience</a>
+//           <a className="pe-3 text-decoration-none" href="#">Projects</a>
+//           <a className="btn btn-outline-dark me-3 mb-3 px-4"
+//             href="https://drive.google.com/file/d/1m7KQcjew_TO1aL0IQUB8_ImKce5Z53As/view?usp=sharing"
+//             role="button" target="_blank" >
+//             Resume
+//           </a>
+//         </div>
+//       </div>
+//     </div>
+//   )
+// }
 
-const header = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "container-fluid py-5 shadow-sm mb-5"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "row align-items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "col-9"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
-    className: "fas fa-laptop-code"
-  }, " Jazzmine Jimenez "), " / Software Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "col-3 d-flex justify-content-evenly"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    className: "pe-3 text-decoration-none",
-    href: "#"
-  }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    className: "pe-3 text-decoration-none",
-    href: "#"
-  }, "Experience"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    className: "pe-3 text-decoration-none",
-    href: "#"
-  }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    className: "btn btn-outline-dark me-3 mb-3 px-4",
-    href: "https://drive.google.com/file/d/1m7KQcjew_TO1aL0IQUB8_ImKce5Z53As/view?usp=sharing",
-    role: "button",
-    target: "_blank"
-  }, "Resume"))));
-};
+/***/ }),
+
+/***/ "./src/pages/projects.jsx":
+/*!********************************!*\
+  !*** ./src/pages/projects.jsx ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Projects)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+function Projects() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Projects");
+}
 
 /***/ })
 
